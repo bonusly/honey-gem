@@ -1,3 +1,3 @@
-module Honey
+module SweetHoney
   VERSION = '0.1.0'
 end
