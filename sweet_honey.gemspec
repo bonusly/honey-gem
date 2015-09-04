@@ -1,7 +1,6 @@
 $:.push File.expand_path('../lib', __FILE__)
 
-# Maintain your gem's version:
-require 'sweet_honey/version'
+require 'sweet_honey'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
@@ -13,9 +12,10 @@ Gem::Specification.new do |s|
   s.summary     = 'Ruby Wrapper for Honey.is API.'
   s.description = 'Honey.is provides an API for developers (https://developer.honey.is/docs). This gem
                    provides commonsense Ruby objects to wrap the JSON endpoints of the API.'
+  s.license     = 'MIT'
 
-  s.files = Dir['{lib}/**/*'] + ['MIT-LICENSE', 'README.md']
+  s.files = Dir['{lib}/**/*.rb'] + ['MIT-LICENSE', 'README.md']
 
   s.add_dependency 'httparty', '~> 0.13'
-  s.add_development_dependency 'rspec', '>= 2.14.1'
+  s.add_development_dependency 'rspec', '~> 3.3'
 end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sweet_honey (0.1.0)
+    sweet_honey (0.0.1)
       httparty (~> 0.13)
 
 GEM
@@ -31,5 +31,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rspec (>= 2.14.1)
+  rspec (~> 3.3)
   sweet_honey!
